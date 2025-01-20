@@ -1,6 +1,13 @@
+import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 export default function MainLayout() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
       {/* Header */}
@@ -11,6 +18,7 @@ export default function MainLayout() {
             <button
               id="menu-button"
               className="text-black md:hidden focus:outline-none"
+              onClick={toggleMenu}
               aria-label="Toggle Menu"
             >
               <svg
@@ -36,29 +44,31 @@ export default function MainLayout() {
           {/* Navigation Links */}
           <div
             id="menu"
-            className="hidden md:flex md:items-center md:space-x-8 absolute md:static left-0 top-16 bg-white md:bg-transparent md:w-auto shadow-md md:shadow-none"
+            className={`${
+              menuOpen ? "block" : "hidden"
+            } md:flex md:items-center md:space-x-8 absolute md:static left-0 top-16 bg-white md:bg-transparent w-full md:w-auto shadow-md md:shadow-none`}
           >
             <Link
               to="/"
-              className="text-black hover:text-gray-500 text-lg font-medium"
+              className="block text-black hover:text-gray-500 text-lg font-medium py-2 px-4 md:py-0"
             >
               Anasayfa
             </Link>
             <Link
               to="/hakkimizda"
-              className="text-black hover:text-gray-500 text-lg font-medium"
+              className="block text-black hover:text-gray-500 text-lg font-medium py-2 px-4 md:py-0"
             >
               Hakkımızda
             </Link>
             <Link
               to="/hizmet-bolgelerimiz"
-              className="text-black hover:text-gray-500 text-lg font-medium"
+              className="block text-black hover:text-gray-500 text-lg font-medium py-2 px-4 md:py-0"
             >
               Hizmet Bölgelerimiz
             </Link>
             <Link
               to="/iletisim"
-              className="text-black hover:text-gray-500 text-lg font-medium"
+              className="block text-black hover:text-gray-500 text-lg font-medium py-2 px-4 md:py-0"
             >
               İletişim
             </Link>
@@ -165,7 +175,7 @@ export default function MainLayout() {
                     viewBox="0 0 24 24"
                     className="w-6 h-6"
                   >
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07..." />
+                    <path d="M12 2.163c3.204 0 3.584.012..." />
                   </svg>
                 </a>
               </div>
@@ -179,3 +189,4 @@ export default function MainLayout() {
     </div>
   );
 }
+
