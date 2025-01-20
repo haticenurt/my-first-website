@@ -50,58 +50,67 @@ export default function Iletisim() {
       <main className="container mx-auto py-16 flex flex-wrap items-start gap-8">
         {/* Sol Taraf: Form */}
         <div className="flex-1 bg-white p-6 shadow-md rounded-md">
-          <form action="#" method="POST" className="grid grid-cols-1 gap-6">
-            <div>
-              <label htmlFor="first-name" className="block text-sm font-semibold text-gray-700">
-                Ad
-              </label>
-              <input
-                id="first-name"
-                name="first-name"
-                type="text"
-                className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              />
-            </div>
-            <div>
-              <label htmlFor="last-name" className="block text-sm font-semibold text-gray-700">
-                Soyad
-              </label>
-              <input
-                id="last-name"
-                name="last-name"
-                type="text"
-                className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-semibold text-gray-700">
-                E-Posta
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-semibold text-gray-700">
-                Mesajınız
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              />
-            </div>
-            <button
-              type="submit"
-              className="mt-4 w-full bg-indigo-600 text-white py-2 rounded-md text-sm font-semibold shadow-sm hover:bg-indigo-500"
-            >
-              Gönder
-            </button>
-          </form>
+        <form
+  action="https://formspree.io/f/mkggdzdv"
+  method="POST"
+  className="grid grid-cols-1 gap-6"
+>
+  <div>
+    <label htmlFor="first-name" className="block text-sm font-semibold text-gray-700">
+      Ad
+    </label>
+    <input
+      id="first-name"
+      name="firstName"
+      type="text"
+      className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+      required
+    />
+  </div>
+  <div>
+    <label htmlFor="last-name" className="block text-sm font-semibold text-gray-700">
+      Soyad
+    </label>
+    <input
+      id="last-name"
+      name="lastName"
+      type="text"
+      className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+      required
+    />
+  </div>
+  <div>
+    <label htmlFor="email" className="block text-sm font-semibold text-gray-700">
+      E-Posta
+    </label>
+    <input
+      id="email"
+      name="email"
+      type="email"
+      className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+      required
+    />
+  </div>
+  <div>
+    <label htmlFor="message" className="block text-sm font-semibold text-gray-700">
+      Mesajınız
+    </label>
+    <textarea
+      id="message"
+      name="message"
+      rows={4}
+      className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+      required
+    />
+  </div>
+  <button
+    type="submit"
+    className="mt-4 w-full bg-indigo-600 text-white py-2 rounded-md text-sm font-semibold shadow-sm hover:bg-indigo-500"
+  >
+    Gönder
+  </button>
+</form>
+
         </div>
 
         {/* Sağ Taraf: Fotoğraf */}
