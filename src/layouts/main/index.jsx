@@ -11,64 +11,57 @@ export default function MainLayout() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
       {/* Header */}
-      <header className="bg-white shadow-lg">
+      <header className="bg-white shadow-lg relative z-20">
         <nav className="container mx-auto flex items-center justify-between py-4 px-6">
           {/* Hamburger Menu for Mobile */}
-          <div className="flex items-center space-x-4">
-            <button
-              id="menu-button"
-              className="text-black md:hidden focus:outline-none"
-              onClick={toggleMenu}
-              aria-label="Toggle Menu"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </button>
-
-            {/* Logo */}
-            <div className="text-black font-bold text-2xl">BUHARA TAKSİ</div>
-          </div>
-
-          {/* Navigation Links */}
-          <div
-            id="menu"
-            className={`${
-              menuOpen ? "block" : "hidden"
-            } md:flex md:items-center md:space-x-8 absolute md:static left-0 top-16 bg-white md:bg-transparent w-full md:w-auto shadow-md md:shadow-none`}
+          <button
+            id="menu-button"
+            className="text-black md:hidden focus:outline-none"
+            onClick={toggleMenu}
+            aria-label="Toggle Menu"
           >
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+
+          {/* Logo */}
+          <div className="text-black font-bold text-2xl">BUHARA TAKSİ</div>
+
+          {/* Navigation Links (Desktop) */}
+          <div className="hidden md:flex space-x-8">
             <Link
               to="/"
-              className="block text-black hover:text-gray-500 text-lg font-medium py-2 px-4 md:py-0"
+              className="text-black hover:text-gray-500 text-lg font-medium"
             >
               Anasayfa
             </Link>
             <Link
               to="/hakkimizda"
-              className="block text-black hover:text-gray-500 text-lg font-medium py-2 px-4 md:py-0"
+              className="text-black hover:text-gray-500 text-lg font-medium"
             >
               Hakkımızda
             </Link>
             <Link
               to="/hizmet-bolgelerimiz"
-              className="block text-black hover:text-gray-500 text-lg font-medium py-2 px-4 md:py-0"
+              className="text-black hover:text-gray-500 text-lg font-medium"
             >
               Hizmet Bölgelerimiz
             </Link>
             <Link
               to="/iletisim"
-              className="block text-black hover:text-gray-500 text-lg font-medium py-2 px-4 md:py-0"
+              className="text-black hover:text-gray-500 text-lg font-medium"
             >
               İletişim
             </Link>
@@ -85,6 +78,50 @@ export default function MainLayout() {
           </div>
         </nav>
       </header>
+
+      {/* Açılan Menü */}
+      <div
+        className={`fixed inset-0 bg-black bg-opacity-90 text-white transform ${
+          menuOpen ? "translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 ease-in-out z-30`}
+      >
+        <div className="flex flex-col items-center justify-center h-full space-y-8">
+          <button
+            onClick={toggleMenu}
+            className="absolute top-8 right-8 text-white text-3xl"
+          >
+            &times;
+          </button>
+          <Link
+            to="/"
+            onClick={toggleMenu}
+            className="text-2xl font-semibold hover:text-yellow-400"
+          >
+            Anasayfa
+          </Link>
+          <Link
+            to="/hakkimizda"
+            onClick={toggleMenu}
+            className="text-2xl font-semibold hover:text-yellow-400"
+          >
+            Hakkımızda
+          </Link>
+          <Link
+            to="/hizmet-bolgelerimiz"
+            onClick={toggleMenu}
+            className="text-2xl font-semibold hover:text-yellow-400"
+          >
+            Hizmet Bölgelerimiz
+          </Link>
+          <Link
+            to="/iletisim"
+            onClick={toggleMenu}
+            className="text-2xl font-semibold hover:text-yellow-400"
+          >
+            İletişim
+          </Link>
+        </div>
+      </div>
 
       {/* Main Content */}
       <main className="flex-1 container mx-auto py-8 px-6">
@@ -144,42 +181,6 @@ export default function MainLayout() {
                 </li>
               </ul>
             </div>
-
-            {/* Hizmet Bölgeleri */}
-            <div className="col-span-1">
-              <h3 className="font-semibold text-lg text-gray-900">
-                Hizmet Bölgeleri
-              </h3>
-              Buhara Mahallesi <br />
-              Yazır Mahallesi <br />
-              Şeyh Şamil Mahallesi <br />
-              Malazgirt Mahallesi <br />
-            </div>
-
-            {/* Sosyal Medya */}
-            <div className="col-span-1">
-              <h3 className="font-semibold text-lg text-gray-900">
-                Sosyal Medyada Biz
-              </h3>
-              <div className="flex space-x-4 mt-4">
-                <a
-                  href="https://www.instagram.com/42t2557/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-800"
-                  aria-label="Instagram"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    className="w-6 h-6"
-                  >
-                    <path d="M12 2.163c3.204 0 3.584.012..." />
-                  </svg>
-                </a>
-              </div>
-            </div>
           </div>
           <div className="border-t border-gray-200 mt-10 pt-6 text-center text-sm text-gray-500">
             @Buhara Taksi. Tüm Hakları Saklıdır.
@@ -189,4 +190,3 @@ export default function MainLayout() {
     </div>
   );
 }
-
