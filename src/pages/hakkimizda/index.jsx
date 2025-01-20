@@ -32,7 +32,7 @@ export default function Hakkimizda() {
           {/* Sağ Taraf: Fotoğraf */}
           <div className="overflow-hidden rounded-lg shadow-lg transition-transform duration-500 hover:scale-105">
             <img
-              src="../public/118.jpg"
+              src="/118.jpg"
               alt="buhara taksi"
               className="w-full h-full object-cover"
             />

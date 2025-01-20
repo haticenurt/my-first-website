@@ -5,7 +5,7 @@ export default function Anasayfa() {
         <section className="h-screen flex flex-col items-center justify-center bg-white">
           <div className="group relative flex items-center justify-center">
             <img
-              src="../public/110.jpg"
+              src="/110.jpg"
               alt="Taksi 1"
               className="w-1/2 h-auto transform transition duration-500 ease-in-out group-hover:scale-110"
             />
@@ -26,7 +26,7 @@ export default function Anasayfa() {
         <section className="h-screen flex flex-col items-center justify-center bg-gray-100">
           <div className="group relative flex items-center justify-center">
             <img
-              src="../public/116.jpg"
+              src="/116.jpg"
               alt="Taksi 2"
               className="w-1/2 h-auto transform transition duration-500 ease-in-out group-hover:scale-110"
             />
@@ -47,7 +47,7 @@ export default function Anasayfa() {
         <section className="h-screen flex flex-col items-center justify-center bg-white">
           <div className="group relative flex items-center justify-center">
             <img
-              src="../public/117.jpg"
+              src="/117.jpg"
               alt="Taksi 3"
               className="w-1/2 h-auto transform transition duration-500 ease-in-out group-hover:scale-110"
             />
