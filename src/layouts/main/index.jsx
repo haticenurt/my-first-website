@@ -5,15 +5,12 @@ export default function MainLayout() {
     <div className="min-h-screen flex flex-col bg-gray-100">
       {/* Header */}
       <header className="bg-white shadow-lg">
-        <nav className="container mx-auto flex flex-wrap items-center justify-between py-4 px-6">
-          {/* Logo */}
-          <div className="text-black font-bold text-2xl">BUHARA TAKSİ</div>
-
+        <nav className="container mx-auto flex items-center justify-between py-4 px-6">
           {/* Hamburger Menu for Mobile */}
-          <div className="block md:hidden">
+          <div className="flex items-center space-x-4">
             <button
               id="menu-button"
-              className="text-black focus:outline-none"
+              className="text-black md:hidden focus:outline-none"
               aria-label="Toggle Menu"
             >
               <svg
@@ -31,49 +28,50 @@ export default function MainLayout() {
                 ></path>
               </svg>
             </button>
+
+            {/* Logo */}
+            <div className="text-black font-bold text-2xl">BUHARA TAKSİ</div>
           </div>
 
           {/* Navigation Links */}
           <div
             id="menu"
-            className="hidden w-full md:flex md:items-center md:space-x-8 absolute md:static left-0 top-16 bg-white md:bg-transparent md:w-auto shadow-md md:shadow-none"
+            className="hidden md:flex md:items-center md:space-x-8 absolute md:static left-0 top-16 bg-white md:bg-transparent md:w-auto shadow-md md:shadow-none"
           >
             <Link
               to="/"
-              className="block text-black hover:text-gray-500 text-lg font-medium px-4 py-2 md:p-0"
+              className="text-black hover:text-gray-500 text-lg font-medium"
             >
               Anasayfa
             </Link>
             <Link
               to="/hakkimizda"
-              className="block text-black hover:text-gray-500 text-lg font-medium px-4 py-2 md:p-0"
+              className="text-black hover:text-gray-500 text-lg font-medium"
             >
               Hakkımızda
             </Link>
             <Link
               to="/hizmet-bolgelerimiz"
-              className="block text-black hover:text-gray-500 text-lg font-medium px-4 py-2 md:p-0"
+              className="text-black hover:text-gray-500 text-lg font-medium"
             >
               Hizmet Bölgelerimiz
             </Link>
             <Link
               to="/iletisim"
-              className="block text-black hover:text-gray-500 text-lg font-medium px-4 py-2 md:p-0"
+              className="text-black hover:text-gray-500 text-lg font-medium"
             >
               İletişim
             </Link>
           </div>
 
           {/* Telefon Butonu */}
-          <div className="mt-4 md:mt-0 absolute md:static right-4">
-            <div className="bg-yellow-600 text-white px-4 py-2 rounded-full flex items-center shadow-lg space-x-2">
-              <a
-                href="tel:+905442592557"
-                className="text-white text-sm font-bold hover:underline"
-              >
-                ALO TAKSİ: 0544 259 25 57
-              </a>
-            </div>
+          <div className="bg-yellow-600 text-white px-4 py-2 rounded-full flex items-center shadow-lg space-x-2">
+            <a
+              href="tel:+905442592557"
+              className="text-white text-sm font-bold hover:underline"
+            >
+              ALO TAKSİ: 0544 259 25 57
+            </a>
           </div>
         </nav>
       </header>
