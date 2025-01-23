@@ -151,30 +151,30 @@ export default function MainLayout() {
 
             {/* Kurumsal Bağlantılar */}
             <div className="col-span-1">
-  <h3 className="font-semibold text-lg text-gray-900">Kurumsal</h3>
-  <ul className="mt-4 space-y-2 text-sm">
-    <li>
-      <Link to="/" className="text-gray-600 hover:underline">
-        Anasayfa
-      </Link>
-    </li>
-    <li>
-      <Link to="/hakkimizda" className="text-gray-600 hover:underline">
-        Hakkımızda
-      </Link>
-    </li>
-    <li>
-      <Link to="/hizmet-bolgelerimiz" className="text-gray-600 hover:underline">
-        Hizmet Bölgelerimiz
-      </Link>
-    </li>
-    <li>
-      <Link to="/iletisim" className="text-gray-600 hover:underline">
-        İletişim
-      </Link>
-    </li>
-  </ul>
-</div>
+              <h3 className="font-semibold text-lg text-gray-900">Kurumsal</h3>
+                <ul className="mt-4 space-y-2 text-sm">
+                 <li>
+                   <Link to="/" className="text-gray-600 hover:underline">
+                    Anasayfa
+                   </Link>
+                 </li>
+                 <li>
+                    <Link to="/hakkimizda" className="text-gray-600 hover:underline">
+                     Hakkımızda
+                   </Link>
+                </li>
+               <li>
+                  <Link to="/hizmet-bolgelerimiz" className="text-gray-600 hover:underline">
+                    Hizmet Bölgelerimiz
+                  </Link>
+              </li>
+              <li>
+                  <Link to="/iletisim" className="text-gray-600 hover:underline">
+                   İletişim
+                 </Link>
+               </li>
+             </ul>
+           </div>
 
             <div className="col-span-1">
               <h3 className="font-semibold text-lg text-gray-900">
