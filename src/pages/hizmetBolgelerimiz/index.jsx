@@ -1,16 +1,16 @@
 export default function HizmetBolgelerimiz(){
     return(
         <div className="bg-yellow-500 min-h-screen flex flex-col text-center text-3xl font-extrabold text-black tracking-wider">
-      <p>
-        <br/><br/><br/><br/><br/>
-            Buhara Mahallesi <br/>
-            Yazır Mahallesi <br/>
-            Şeyh Şamil Mahallesi <br/>
-            Malazgirt Mahallesi <br/>
-            Parsana Mahallesi <br/>
-            Selahattin Eyyubi Mahallesi <br/>
-            Binkonut Mahallesi <br/>
-      </p>
+      <h1>
+        <br/><br/><br/><br/>
+        <h1>Buhara Mahallesi</h1> <br/>
+        <h1>Buhara Mahallesi</h1> <br/>
+        <h1>Şeyh Şamil Mahallesi </h1>   <br/>
+        <h1>Malazgirt Mahallesi</h1>    <br/>
+        <h1>Parsana Mahallesi</h1>     <br/>
+        <h1>Selahattin Eyyubi Mahallesi</h1>     <br/>
+        <h1>Binkonut Mahallesi </h1>   <br/>
+      </h1>
         </div>
     )
 }

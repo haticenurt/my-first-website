@@ -6,14 +6,14 @@ export default function Anasayfa() {
           <div className="group relative flex items-center justify-center">
             <img
               src="/110.jpg"
-              alt="Taksi 1"
+              alt="yazır taksi"
               className="w-1/2 h-auto transform transition duration-500 ease-in-out group-hover:scale-110"
             />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800 mt-8">Konforlu Araçlarımız</h2>
-          <p className="text-lg text-gray-600 text-center max-w-md mt-4">
+          <h2 className="text-3xl font-bold text-gray-800 mt-8">Hızlı Taksi</h2>
+          <h3 className="text-lg text-gray-600 text-center max-w-md mt-4">
             Şehir içi ve şehir dışı konforlu yolculuklar için en iyi seçenek.
-          </p>
+          </h3>
           <a
             href="tel:+905442592557"
             className="text-yellow-500 text-2xl font-bold hover:underline mt-6"
@@ -31,10 +31,10 @@ export default function Anasayfa() {
               className="w-1/2 h-auto transform transition duration-500 ease-in-out group-hover:scale-110"
             />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800 mt-8">Güvenli Yolculuk</h2>
-          <p className="text-lg text-gray-600 text-center max-w-md mt-4">
-            Deneyimli sürücülerimizle daima güvendesiniz.
-          </p>
+          <h2 className="text-3xl font-bold text-gray-800 mt-8">En İyi Taksi Hizmeti</h2>
+          <h3 className="text-lg text-gray-600 text-center max-w-md mt-4">
+            Deneyimli sürücülerimizle güvenli yolculuk için hemen arayın.
+          </h3>
           <a
             href="tel:+905442592557"
             className="text-yellow-500 text-2xl font-bold hover:underline mt-6"
@@ -53,9 +53,9 @@ export default function Anasayfa() {
             />
           </div>
           <h2 className="text-3xl font-bold text-gray-800 mt-8">Hızlı Hizmet</h2>
-          <p className="text-lg text-gray-600 text-center max-w-md mt-4">
+          <h3 className="text-lg text-gray-600 text-center max-w-md mt-4">
             Hızlı taksi çağırma hizmetimizle zaman kaybetmeyin.
-          </p>
+          </h3>
           <a
             href="tel:+905442592557"
             className="text-yellow-500 text-2xl font-bold hover:underline mt-6"
