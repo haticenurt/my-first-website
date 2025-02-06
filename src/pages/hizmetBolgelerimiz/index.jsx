@@ -4,7 +4,7 @@ export default function HizmetBolgelerimiz(){
       <h1>
         <br/><br/><br/><br/>
         <h1>Buhara Mahallesi</h1> <br/>
-        <h1>Buhara Mahallesi</h1> <br/>
+        <h1>Yazır Mahallesi</h1> <br/>
         <h1>Şeyh Şamil Mahallesi </h1>   <br/>
         <h1>Malazgirt Mahallesi</h1>    <br/>
         <h1>Parsana Mahallesi</h1>     <br/>
