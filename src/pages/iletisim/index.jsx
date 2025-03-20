@@ -35,7 +35,7 @@ export default function Iletisim() {
         <div className="w-full h-64 bg-gray-200 text-center flex items-center justify-center rounded-md shadow-inner overflow-hidden">
           <iframe
             title="Google Maps Konumu"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d792.6618989262764!2d32.49293248070539!3d37.947082875572704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08fa55f36fb8b%3A0xefce9beac119abb8!2zS3V2ZXl0IFTDvHJrIFNlbMOndWtsdSDFnnViZXNp!5e0!3m2!1str!2str!4v1742496259897!5m2!1str!2str"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d656.2288398159131!2d32.49273080456082!3d37.94742937539944!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08e57d74b7e6b%3A0x799ce61e22aa6fc1!2zUGFyc2FuYSwgQmFyxLHFnyBDZC4gMTA1L0EsIDQyMjUwIFNlbMOndWtsdS9Lb255YQ!5e0!3m2!1str!2str!4v1742496659548!5m2!1str!2str"
             width="100%"
             height="100%"
             style={{ border: 0 }}
