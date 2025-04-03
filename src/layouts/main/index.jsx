@@ -37,7 +37,7 @@ export default function MainLayout() {
           </button>
 
           {/* Logo */}
-          <div className="text-black font-bold text-2xl">Buhara Taksi</div>
+          <div className="text-black font-bold text-2xl">BUHARA TAKSİ</div>
 
           {/* Navigation Links (Desktop) */}
           <div className="hidden md:flex space-x-8">
