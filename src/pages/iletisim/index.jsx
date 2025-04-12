@@ -21,7 +21,7 @@ export default function Iletisim() {
         {/* Telefon ve Adres Bilgisi */}
         <div className="text-center space-y-4">
           <p className="text-lg font-semibold text-gray-800  tracking-wider ">
-            Telefon: <a href="tel:+905442592557" className="text-indigo-600 hover:underline">+90 544 259 25 57</a>
+            Telefon: <a href="tel:+905386847883" className="text-indigo-600 hover:underline">+90 538 684 78 83</a>
           </p>
           <p className="text-lg font-semibold text-gray-800  tracking-wider ">
             Adres: <span className="text-gray-600">Parsana, Barış Cd. No: 105/A, 42130 Selçuklu/Konya</span>

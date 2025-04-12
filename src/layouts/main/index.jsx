@@ -70,10 +70,10 @@ export default function MainLayout() {
           {/* Telefon Butonu */}
           <div className="bg-yellow-600 text-white px-4 py-2 rounded-full flex items-center shadow-lg space-x-2">
             <a
-              href="tel:+905442592557"
+              href="tel:+905386847883"
               className="text-white text-sm font-bold hover:underline"
             >
-              ALO TAKSİ: 0544 259 25 57
+              ALO TAKSİ: 0538 684 78 83
             </a>
           </div>
         </nav>
