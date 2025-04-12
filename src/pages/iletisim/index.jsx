@@ -24,7 +24,11 @@ export default function Iletisim() {
             Telefon: <a href="tel:+905386847883" className="text-indigo-600 hover:underline">+90 538 684 78 83</a>
           </p>
           <p className="text-lg font-semibold text-gray-800  tracking-wider ">
+<<<<<<< HEAD
             Adres: <span className="text-gray-600">Parsana, Barış Cd. No: 105/A, 42130 Selçuklu/Konya</span>
+=======
+            Adres: <span className="text-gray-600">Kerem Sok., No:19, Selçuklu, Konya </span>
+>>>>>>> 698e56e240211717c94451fcde3a7a52f2e700a2
           </p>
           <p className="text-lg font-semibold text-gray-800  tracking-wider ">
             E-Posta: <span className="text-gray-600">buharataksi42@gmail.com  </span>
@@ -35,7 +39,11 @@ export default function Iletisim() {
         <div className="w-full h-64 bg-gray-200 text-center flex items-center justify-center rounded-md shadow-inner overflow-hidden">
           <iframe
             title="Google Maps Konumu"
+<<<<<<< HEAD
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d656.2288398159131!2d32.49273080456082!3d37.94742937539944!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08e57d74b7e6b%3A0x799ce61e22aa6fc1!2zUGFyc2FuYSwgQmFyxLHFnyBDZC4gMTA1L0EsIDQyMjUwIFNlbMOndWtsdS9Lb255YQ!5e0!3m2!1str!2str!4v1742496659548!5m2!1str!2str"
+=======
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1973.9714765721699!2d32.48730444748181!3d37.94206313105791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08efe49096c41%3A0xd94751472b8f69c9!2sBuhara%2C%20Kerem%20Sk.%20No%3A19%2C%2042250%20Sel%C3%A7uklu%2FKonya!5e0!3m2!1str!2str!4v1743666483671!5m2!1str!2str"
+>>>>>>> 698e56e240211717c94451fcde3a7a52f2e700a2
             width="100%"
             height="100%"
             style={{ border: 0 }}
