@@ -8,7 +8,7 @@ export default function Hakkimizda() {
               Hakkımızda
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Konya Taksi, 7/24 aktif hizmet anlayışıyla şehir içi ve şehir dışı ulaşım ihtiyaçlarınızda yanınızda
+              Buhara Taksi, 7/24 aktif hizmet anlayışıyla şehir içi ve şehir dışı ulaşım ihtiyaçlarınızda yanınızda
               olmayı hedeflemektedir. Müşteri memnuniyetini esas alarak kurulan durağımız, güvenli, konforlu ve zamanında
               ulaşım hizmeti sunar.
             </p>

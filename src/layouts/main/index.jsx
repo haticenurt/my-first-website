@@ -37,7 +37,7 @@ export default function MainLayout() {
           </button>
 
           {/* Logo */}
-          <div className="text-black font-bold text-2xl">EN YAKIN TAKSİ</div>
+          <div className="text-black font-bold text-2xl">BUHARA TAKSİ</div>
 
           {/* Navigation Links (Desktop) */}
           <div className="hidden md:flex space-x-8">
@@ -141,8 +141,8 @@ export default function MainLayout() {
                   className="h-12 w-auto"
                 />
                 <div className="text-xl font-bold text-yellow-600 ml-2">
-                EN YAKIN TAKSİ
-                  <div className="text-sm font-medium text-gray-500">
+                    BUHARA TAKSİ
+                    <div className="text-sm font-medium text-gray-500">
                     7/24 AKTİF
                   </div>
                 </div>
@@ -203,8 +203,7 @@ export default function MainLayout() {
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-200 mt-10 pt-6 text-center text-sm text-gray-500">
-            @En Yakın Taksi. Tüm Hakları Saklıdır.
+          <div className="border-t border-gray-200 mt-10 pt-6 text-center text-sm text-gray-500">@En Yakın Taksi. Tüm Hakları Saklıdır.
           </div>
         </div>
       </footer>
