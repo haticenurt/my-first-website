@@ -15,10 +15,10 @@ export default function Anasayfa() {
             Şehir içi ve şehir dışı konforlu yolculuklar için en iyi seçenek.
           </h3>
           <a
-            href="tel:+905386847883"
+            href="tel:+905442592557"
             className="text-yellow-500 text-2xl font-bold hover:underline mt-6"
           >
-            ALO TAKSİ: 0538 684 78 83
+            ALO TAKSİ: 0544 259 25 57
           </a>
         </section>
   
@@ -36,10 +36,10 @@ export default function Anasayfa() {
             Deneyimli sürücülerimizle güvenli yolculuk için hemen arayın.
           </h3>
           <a
-            href="tel:+905386847883"
+            href="tel:+905442592557"
             className="text-yellow-500 text-2xl font-bold hover:underline mt-6"
           >
-           ALO TAKSİ: 0538 684 78 83
+           ALO TAKSİ: 0544 259 25 57
           </a>
         </section>
   
@@ -57,10 +57,10 @@ export default function Anasayfa() {
             Hızlı taksi çağırma hizmetimizle zaman kaybetmeyin.
           </h3>
           <a
-            href="tel:+905386847883"
+            href="tel:+905442592557"
             className="text-yellow-500 text-2xl font-bold hover:underline mt-6"
           >
-            ALO TAKSİ: 0538 684 78 83
+            ALO TAKSİ: 0544 259 25 57
           </a>
         </section>
   
@@ -70,7 +70,7 @@ export default function Anasayfa() {
             href="tel:+905442592557"
             className="text-white text-2xl font-bold hover:underline"
           >
-            ALO TAKSİ: 0538 684 78 83
+            ALO TAKSİ: 0544 259 25 57
           </a>
         </footer>
       </main>
